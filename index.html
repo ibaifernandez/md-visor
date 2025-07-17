@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Visor Markdown</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside id="sidebar" aria-label="Lista de documentos">
+      <h1>📂 Documentos</h1>
+      <div id="file-list" role="tree"></div>
+    </aside>
+
+    <main id="content" role="main">
+      <div class="markdown-container">
+        <h1>Bienvenido</h1>
+        <p>Selecciona un archivo para visualizar su contenido Markdown.</p>
+      </div>
+    </main>
+  </div>
+
+  <div id="disclaimer" class="disclaimer" role="complementary">
+    <span>
+      ⚠️ Si agregas nuevos archivos a <code>/docs</code>, ejecuta en terminal:
+      <code>node generateFileList.js</code>
+    </span>
+    <button id="dismiss-disclaimer" aria-label="Cerrar recordatorio">✕</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
