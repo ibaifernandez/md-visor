@@ -1,84 +1,98 @@
-# 📚 Visor Markdown Local
+# 📚 Local Markdown Viewer
 
-¿Tienes tu mente hecha mierda con miles de notas sueltas, ideas a medio cocinar y documentación regada por todas partes?  
-Bien. Este proyecto es para ti.
+Got your brain messed up with thousands of loose notes, half-cooked ideas, and scattered docs everywhere?  
+Perfect. This project is for you.
 
-Un simple visor de archivos `.md`, bonito, ordenado por carpetas, y **sin dependencias de mierda**.  
-Abres en el navegador, lees, y ya. ¿Para qué más?
+A simple `.md` file viewer — neat, folder-organized, and **without any bloated dependencies**.  
+Open it in your browser. Read. That’s it. Why complicate?
 
 ---
 
-## 🚀 Cómo se usa
+## 🚀 How to Use It
 
-### 1. Clona el puto repositorio
+### 1. Clone the freaking repo
 
-```cli
+```bash
 git clone https://github.com/ibaifernandez/visor-md.git
 cd visor-md
 ```
 
-### 2. Mete tu documentación en /docs
+### 2. Drop your docs into `/docs`
 
-Organiza tus archivos Markdown como quieras:
+Organize your Markdown files however you want:
 
-```plaintext
+```
 docs/
-├── proyecto-1/
+├── project-1/
 │   └── intro.md
 ├── ideas/
 │   └── manifesto.md
-└── cosas-que-no-se-donde-van/
+└── stuff-that-doesnt-fit-anywhere/
     └── random.md
 ```
 
-### 3. Genera la lista de archivos
+### 3. Generate the file list
 
-Cada vez que agregues archivos nuevos:
+Every time you add new files, run:
 
-```node generateFileList.js```
+```bash
+node generateFileList.js
+```
 
-Sí, a mano. Como los dioses del teclado mandan.
+Yeah, manually. Like the keyboard gods intended.  
+(No automation. No black magic. It's JavaScript, not Hogwarts.)
 
-(No es automático. No hay magia. Es JavaScript, no Harry Potter).
+### 4. Run a local server
 
-### 4. Corre un servidor local
+If you don’t have `http-server` installed:
 
-Si no tienes ```http-server```:
+```bash
+npm install -g http-server
+```
 
-```npm install -g http-server```
+Then run:
 
-Y luego, ejecuta:
+```bash
+http-server .
+```
 
-```http-server .```
-
-Abre tu navegador donde te diga la terminal.
-
+Open your browser where the terminal tells you.  
 Boom.
 
-### ✨ ¿Qué hace?
+---
 
-- Muestra tu documentación Markdown sin complicaciones.
-- Organiza los archivos por carpeta, con acordeones.
-- Usa marked.js para renderizar como dios manda.
-- Puedes ocultar el disclaimer con un botón, por si no te gusta que te recuerden cosas.
-- Es feo si quieres que sea feo, y bonito si lo tuneas. Tú decides.
+### ✨ What It Does
 
-## 📎 Notas sueltas
+- Displays your Markdown docs — no fuss.
+- Auto-organizes them into folders with accordions.
+- Uses `marked.js` to render beautifully.
+- Includes a disclaimer you can dismiss (because nagging is optional).
+- Ugly if you want, pretty if you tweak it. Your call.
 
-Este proyecto no guarda cambios, no tiene backend, y no intenta parecerse a Notion.
-Es como un cuaderno viejo... pero que se ve bien en pantalla retina.
+---
 
-Si rompes algo, ya sabes a quién culpar: a ti.
+## 📎 Loose Notes
 
-## 🧠 Filosofía
+This project doesn’t store changes.  
+There’s no backend.  
+And it’s *definitely* not trying to be Notion.
 
-Porque no todo tiene que ser SaaS, freemium o venderte tu alma a Google.
-Porque los .md también merecen amor.
-Porque tú lo vales. O al menos tus notas.
+It’s like an old notebook… just sharper on a retina screen.
 
-## 🆓 Licencia
+If you break it, well — that’s on you.
 
-MIT. O sea, haz lo que te dé la gana.
-No hace falta ni que me nombres.
-Solo no digas que lo hiciste tú desde cero si no es verdad.
-Porque eso sí sería una falta de respeto.
+---
+
+## 🧠 Philosophy
+
+Because not everything needs to be SaaS, freemium, or cost your digital soul.  
+Because `.md` files deserve love too.  
+Because you’re worth it. Or at least your notes are.
+
+---
+
+## 🆓 License
+
+MIT. Do whatever you want with it.  
+No need to credit me.  
+Just don’t pretend you built it from scratch. That would be lame.
