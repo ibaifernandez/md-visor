@@ -21,7 +21,7 @@ cd visor-md
 
 Organize your Markdown files however you want:
 
-```
+```plaintext
 docs/
 ├── project-1/
 │   └── intro.md
