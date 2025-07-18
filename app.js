@@ -3,7 +3,7 @@ const fileList = document.getElementById('file-list');
 const content = document.getElementById('content');
 
 // Cargar lista de archivos organizada por carpetas
-fetch('fileList.json')
+fetch(`fileList.json?t=${Date.now()}`)
   .then((res) => res.json())
   .then((folders) => {
     Object.entries(folders).forEach(([folder, files]) => {
@@ -43,7 +43,7 @@ fetch('fileList.json')
   });
 
 function loadMarkdown(filename) {
-  fetch(`docs/${encodeURIComponent(filename)}`)
+    fetch(`docs/${encodeURIComponent(filename)}?t=${Date.now()}`)
     .then((res) => res.text())
     .then((markdown) => {
       content.innerHTML = `<div class="markdown-container">${marked.parse(markdown)}</div>`;

@@ -4,6 +4,8 @@
 
 Today's session focused on establishing the foundational user authentication flow for the Firebase Studio App.
 
+This is just a cache test.
+
 Me and "my partner in crime" — Firebase AI — successfully implemented a beta whitelist using a Firebase Authentication blocking function, built the core signup and email verification pages in the Next.js frontend, set up global authentication state management with React Context and the `AuthProvider`, and deployed the application to Firebase App Hosting—among many other tasks that allowed us to achieved these
 aforementioned goals.
 
