@@ -1,5 +1,6 @@
+# Archivos del sistema
 .DS_Store
-*/.DS_Store
+**/.DS_Store
 
-/docs
-docs/GDL/.DS_Store
+# Carpeta de markdowns (no subir nunca a GitHub)
+docs/
