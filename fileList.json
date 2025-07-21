@@ -1,9 +1,25 @@
 {
-  "Firebase": [
-    "Finance Traker Project Summary Day 1.md"
+  "dj-amapola": [
+    "1-presencia-digital.md",
+    "2-distrokid.md",
+    "3-youtube.md",
+    "4-campana-dj.md"
   ],
-  "GDL": [
-    "01-como-alcanzo-el-GDL.md",
+  "dj-amapola/estrategias": [
+    "i-the-signing-blueprint.md"
+  ],
+  "dj-amapola/labels": [
+    "a-lftd-global.md"
+  ],
+  "dj-amapola/reviews": [
+    "vienna.md"
+  ],
+  "firebase": [
+    "finance-traker-project-summary-day-1.md"
+  ],
+  "gdl": [
+    "00-the-guided-development-lifecycle-gdl-framework.md",
+    "01-como-alcanzo-el-gdl.md",
     "02-como-conseguir-una-ia-mayeutica.md",
     "03-como-conformar-el-project-knowledge-graph.md",
     "04-como-evitar-la-condescendencia-de-la-ia.md",
@@ -13,8 +29,5 @@
     "08-fase-1-discovery-lab.md",
     "09-fase-2-bluepront-room.md",
     "10-fase-3-y-conclusiones.md"
-  ],
-  "Prólogo": [
-    "The Guided Development Lifecycle (GDL) Framework.md"
   ]
 }

@@ -1,12 +1,14 @@
+# Cómo conformar el Project Knowledge Graph
+
 Conformar el "Project Knowledge Graph" (PKG) es un proceso disciplinado y continuo que transforma las conversaciones con la IA en una fuente de verdad estructurada para tu proyecto. No es algo que se hace al final, sino **documento a documento, al concluir cada módulo del GDL**.
 
 Tu rol es el de un "bibliotecario" o "archivista" del proyecto, y la IA es la "escriba" que genera el contenido bajo tu dirección.
 
 ---
 
-### Metodología para Construir el PKG:
+## Metodología para Construir el PKG
 
-#### 1. **Establece la Estructura de Archivos desde el Principio**
+### 1. **Establece la Estructura de Archivos desde el Principio**
 
 Antes de empezar, crea una carpeta en tu proyecto dedicada exclusivamente al PKG. Esto crea un lugar central y predecible para toda la documentación.
 
@@ -30,17 +32,18 @@ Antes de empezar, crea una carpeta en tu proyecto dedicada exclusivamente al PKG
 
 *La numeración ayuda a mantener el orden lógico del proceso GDL.*
 
-#### 2. **Genera Cada Documento al Final de su Módulo Correspondiente**
+### 2. **Genera Cada Documento al Final de su Módulo Correspondiente**
 
 El GDL está dividido en módulos. La clave es no pasar al siguiente módulo sin antes haber documentado el actual.
 
 **Tu Proceso es un Bucle:**
-1.  **Dialoga con la IA** para completar un módulo (ej. definir las historias de usuario).
-2.  **Da una Orden Explícita de Documentación** una vez que estés satisfecho con la conversación.
-3.  **Copia, Pega y Guarda** el resultado en el archivo correspondiente.
-4.  **Inicia el Siguiente Módulo.**
 
-#### 3. **Usa Órdenes de Documentación Claras y Específicas**
+1. **Dialoga con la IA** para completar un módulo (ej. definir las historias de usuario).
+2. **Da una Orden Explícita de Documentación** una vez que estés satisfecho con la conversación.
+3. **Copia, Pega y Guarda** el resultado en el archivo correspondiente.
+4. **Inicia el Siguiente Módulo.**
+
+### 3. **Usa Órdenes de Documentación Claras y Específicas**
 
 No dejes que la IA decida cómo documentar. Sé el director.
 
@@ -57,10 +60,10 @@ No dejes que la IA decida cómo documentar. Sé el director.
 El PKG no está escrito en piedra. Es una fuente de verdad *actual*.
 
 * **Actualiza cuando sea necesario:** Si durante la Fase 3 (Ensamblaje) descubres que un modelo de datos necesita un campo nuevo, el proceso es:
-    1.  Pausar el desarrollo.
-    2.  Volver al diálogo de la Fase 2 con la IA para discutir el cambio.
-    3.  **Actualizar el documento `06_DATA_MODEL.md`** con la nueva estructura.
-    4.  Reanudar el desarrollo con la nueva especificación.
+    1. Pausar el desarrollo.
+    2. Volver al diálogo de la Fase 2 con la IA para discutir el cambio.
+    3. **Actualizar el documento `06_DATA_MODEL.md`** con la nueva estructura.
+    4. Reanudar el desarrollo con la nueva especificación.
 * **El `CHANGELOG.md` es clave:** Al final de cada "sprint" de desarrollo de una feature, actualiza el changelog.
     > **Orden:** "La feature 'Login de Usuario' está completa y probada. Actualiza el `08_CHANGELOG.md` añadiendo una entrada para hoy con esta nueva funcionalidad."
 

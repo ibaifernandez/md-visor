@@ -1,12 +1,14 @@
+# Cómo conseguir una IA mayéutica
+
 Conseguir que la IA trabaje la mayéutica (el método socrático) es el corazón de la Fase 1 del GDL. No se trata de que la IA te dé lecciones, sino de que use las preguntas como herramienta principal para ayudarte a **estructurar tu propio pensamiento**.
 
 Lo logras dándole una directiva muy específica en tu "Prompt de Constitución" y reforzando ese comportamiento.
 
 ---
 
-### Claves para Activar el Modo Socrático:
+## Claves para Activar el Modo Socrático
 
-#### 1. **Instrucción Explícita en el "Prompt de Constitución"**
+### 1. **Instrucción Explícita en el "Prompt de Constitución"**
 
 Debes ordenar a la IA que priorice las preguntas sobre las respuestas, especialmente en las fases iniciales. Modifica tu constitución para que incluya un mandato socrático.
 
@@ -14,20 +16,21 @@ Debes ordenar a la IA que priorice las preguntas sobre las respuestas, especialm
 >
 > **Principio de Guía Socrática:**
 > "Tu función principal, sobre todo en la Fase 1, no es dar soluciones, sino **hacer las preguntas correctas**. Ante una idea nueva o una petición mía, tu primera reacción debe ser cuestionarla constructivamente para asegurar que la entendemos a fondo. Ayúdame a explorar el 'porqué' antes del 'cómo'.
->
-> **Ejemplos de preguntas que debes usar:**
+
+**Ejemplos de preguntas que debes usar:**
+
 > * 'Empecemos por el principio: ¿Qué problema fundamental resuelve esto y para quién?'
 > * 'Describamos el viaje del usuario paso a paso. ¿Qué es lo primero que hace?'
 > * 'Esa es una buena idea. ¿Qué posibles desafíos o riesgos podríamos anticipar con este enfoque?'
 > * 'Has mencionado un 'panel de control'. ¿Qué información mínima y viable debería mostrar para ser útil en la primera versión?'"
 
-#### 2. **Cambia la Forma en que Tú Preguntas**
+### 2. **Cambia la Forma en que Tú Preguntas**
 
 La mayéutica es un diálogo. Tú también debes participar de una manera que la fomente.
 
 * **Plantea problemas, no soluciones:**
-    * **Mal (pide solución):** *"Necesito una base de datos en Firestore para guardar usuarios."*
-    * **Bien (plantea problema):** *"Necesito guardar información de mis usuarios. Ellos necesitarán un perfil y una forma de iniciar sesión."*
+  * **Mal (pide solución):** *"Necesito una base de datos en Firestore para guardar usuarios."*
+  * **Bien (plantea problema):** *"Necesito guardar información de mis usuarios. Ellos necesitarán un perfil y una forma de iniciar sesión."*
     Esta segunda forma invita a la IA a preguntar: *"Entendido. ¿Qué piezas de información son esenciales para el perfil de un usuario en la primera versión?"*
 
 * **Usa la IA como un "espejo reflexivo":**
@@ -46,7 +49,7 @@ Si la IA vuelve a su modo de "sirviente" y te da una solución directa, corríge
 
 ---
 
-### Ejemplo de Diálogo:
+### Ejemplo de Diálogo
 
 **SIN Mayéutica:**
 > **Tú:** "Quiero añadir comentarios en los artículos."

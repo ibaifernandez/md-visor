@@ -20,14 +20,17 @@ fetch(`fileList.json?t=${Date.now()}`)
 
       files.forEach((filename) => {
         const displayName = filename.replace(/\.md$/i, '');
+        const fullPath = `docs/${folder}/${filename}`; // ✅ Ajustado aquí
+
         const fileItem = document.createElement('div');
         fileItem.textContent = displayName;
         fileItem.classList.add('file-item');
         fileItem.addEventListener('click', () => {
-          loadMarkdown(`${folder}/${filename}`);
+            console.log("📄 Intentando cargar:", fullPath);
+            loadMarkdown(fullPath);
         });
         fileContainer.appendChild(fileItem);
-      });
+    });
 
       // Toggle del acordeón
       folderButton.addEventListener('click', () => {
@@ -43,13 +46,16 @@ fetch(`fileList.json?t=${Date.now()}`)
   });
 
 function loadMarkdown(filename) {
-    fetch(`docs/${encodeURIComponent(filename)}?t=${Date.now()}`)
-    .then((res) => res.text())
+  fetch(`${encodeURI(filename)}?t=${Date.now()}`)
+    .then((res) => {
+      if (!res.ok) throw new Error(`(${res.status}) ${res.statusText}`);
+      return res.text();
+    })
     .then((markdown) => {
       content.innerHTML = `<div class="markdown-container">${marked.parse(markdown)}</div>`;
     })
     .catch((err) => {
-      content.innerHTML = `<p style="color:red;">Error al cargar ${filename}: ${err.message}</p>`;
+      content.innerHTML = `<p style="color:red;">Error al cargar <code>${filename}</code>: ${err.message}</p>`;
     });
 }
 
